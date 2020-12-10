@@ -1,0 +1,85 @@
+# Project information
+site_name: Oktave's Developer Portal
+site_description: Welcome to Oktave's Developer Portal, where you’ll find everything you need to interact with our platform
+site_author: Benoit FIEVET
+site_url: https://developer.oktave.co/
+
+# Repository
+repo_name: confidencesApp/oktave-sdk-php
+repo_url: https://github.com/confidencesapp/oktave-sdk-php
+
+# Theme configuration
+theme:
+  name: material
+  font:
+    text: 'Poppins'
+    code: 'Fira Code'
+  custom_dir: overrides
+  favicon: assets/favicon.png
+  logo: assets/images/logo-white.svg
+  icon:
+    repo: fontawesome/brands/github
+  language: en
+  palette:
+    scheme: preference
+    primary: deep purple
+    accent: light blue
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tabs
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/OktaveSurvey
+      name: Oktave sur Facebook
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/oktaveSurvey
+      name: Oktave sur Twitter
+    - icon: fontawesome/brands/slack
+      link: https://oktave-survey.slack.com
+      name: Oktave sur Slack
+    - icon: fontawesome/brands/github
+      link: https://github.com/confidencesapp/oktave-sdk-php
+      name: Faker repository
+    - icon: fontawesome/regular/file-alt
+      link: https://github.com/confidencesapp/developer.oktave.co
+      name: Docs repository
+extra_css:
+  - assets/stylesheets/extra.css
+  # Themes can be found here: <https://github.com/highlightjs/highlight.js/tree/master/src/styles>
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/styles/atom-one-dark-reasonable.min.css
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js
+  - assets/javascripts/highlight.js
+
+# Markdown
+markdown_extensions:
+  - mdx_truly_sane_lists
+  - attr_list
+  - toc:
+      permalink: '#'
+
+# Copyright
+copyright: Copyright &copy; 2021 Oktave - Confidences SAS
+
+# Page tree
+nav:
+  - Home: index.md
+  - Getting started:
+      - Requirements: getting-started.md
+  - PHP SDK:
+      - Installation: php-sdk/installation.md
+      - Configuration: php-sdk/setup.md
+      - Usage: php-sdk/usage.md
+      - Webhook Verification: php-sdk/webhooks.md
+      - Campaigns: php-sdk/campaigns.md
+  - Webhooks:
+      - Configuration: webhooks/configuration.md
+      - Payload: webhooks/payload.md
+      - Events: webhooks/events.md
+      - Objects: webhooks/objects.md
